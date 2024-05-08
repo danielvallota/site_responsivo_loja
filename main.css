@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background-color: #007bff38; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.menu {
+    display: inline-block; /* Faz com que os itens da lista fiquem lado a lado */
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.menu:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita do último item */
+}
+
+.menu a {
+    color: #fff; /* Cor do texto branco */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: 18px; /* Tamanho da fonte dos links */
+    cursor: pointer;
+}
+img {
+    width: 200px;
+}
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+
+
+#foto-loja img {
+    width: 350px;
+}
+
+.sobre-a-loja {
+    margin-top: 40px;
+}
+
+.sobre-a-loja h2, p{
+    margin: 0;
+}
+
+.sobre-a-loja p {
+    padding-top: 20px;
+}
+
+.sobre-a-loja h2 {
+    font-style: italic;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+#sobre-a-loja h2, p{
+    padding-left: 20px;
+}
+
+hr.hr {
+    border: none;    
+    height: 2px;
+    background-color: blue;
+    margin-bottom: 30px ;
+}
+
+hr.hr-sobre {
+    border: none;    
+    height: 2px;
+    background-color: blue;
+    margin-left: 20px;
+}
+
+.produtos h2 {
+    font-style: italic;
+    color: blue;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.lista-produtos {
+    padding:0 ;
+    margin-right: 10px;
+}
+
+.lista-produtos li {
+    list-style: none;
+    max-width: 21%;
+}
+
+ul.lista-produtos.flex {
+    margin: 0;
+}
+
+.lista-produtos li img {
+    max-width: 100%;
+    width: 350px;
+}
+
+li {
+margin-right: 54px;
+}
+
+li.menu {
+    list-style: none;
+}
+
+li.menu a {
+    font-size: larger;
+}
+
+.ultimo {
+    margin: 0px;
+}
+
+hr#produtos {
+    margin-bottom: 30px;
+}
+
+li p {
+    padding: 0;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+
+/*------------------AQUI COMEÇA RESPONSIVIDADE DE TABLET DE 641PX A 1023PX-------------------------------------------*/
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        justify-content: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+.container {
+    max-width: 90%;
+}
+
+.header {
+    width: 100%;
+    background-color: #007bff38; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+#foto-loja {
+    width: 100%;
+}
+#foto-loja img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#sobre-a-loja h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.sobre-a-loja p {
+    margin: 0;
+    padding: 0;
+}
+hr.hr-sobre {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    }
+
+hr.hr {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    }
+
+.lista-produtos li {
+    max-width: 48%;
+}
+
+.lista-produtos li img {
+width: 446px;
+}
+
+ul.lista-produtos.flex li{
+    margin: 0;
+}
+}
+
+
+/*------------------AQUI COMEÇA RESPONSIVIDADE DE CELULAR ATÉ 640px-------------------------------------------*/
+
+@media screen and (min-width: 375px) and (max-width: 640px) {
+    .header {
+        width: 100%;
+        
+        align-items: center;
+    }
+
+    img#logo {
+        width: 120px;
+        height: 100%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    nav {
+        display: flex;
+        width: 42%;
+    }
+
+    nav ul.flex {
+        display: flex;
+        flex-direction: row; /* Define a direção dos itens como linha */
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 90%;
+        
+    }
+
+    li.menu {
+        margin-right: 20px;
+    }
+
+    li.menu:last-child {
+        margin-right: 0;
+    }
+
+    li.menu a {
+        font-size: small;
+    }
+
+    #sobre-a-loja h2,
+    p {
+        padding: 0;
+    }
+
+    #sobre-a-loja h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    hr.hr-sobre {
+        margin-left: 0;
+    }
+
+    #produtos {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    #foto-loja img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .lista-produtos li img {
+        max-width: 100%;
+        width: 641px;
+    }
+
+    .lista-produtos li {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        border: none;
+        height: 25px;
+        border-radius: 5px;
+        margin-bottom: 40px;
+    }
+
+    ul.lista-produtos.flex li h3 {
+        margin-bottom: 3px;
+    }
+
+    ul.lista-produtos.flex li {
+        margin: 0;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+
